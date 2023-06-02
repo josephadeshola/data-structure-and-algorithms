@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <b> SECTION B </b>
+    <center>
+    <div id="displayRange"></div>
+    <button onclick="checkNumber()">check numner</button>
+    <input type="text" placeholder="enter number" id="userInput" />
+    <p id="displayResult"></p>
+      <a href="./gradingsystem.html">next page</a>
+  </center>
+    <script>
+      // SECTION B
+
+      for (let i = 1; i <= 100; i++) {
+        displayRange.innerHTML += `<h6>${i}</h6>`;
+      }
+      function checkNumber() {
+        let users = userInput.value;
+        if (users % 3 ==0 && users % 5 == 0) {
+          displayResult.innerHTML=("PDC NID");
+        }
+        else if(users%5==0){
+            displayResult.innerHTML=("NID");  
+        }
+        else if(users%3==0){
+            displayResult.innerHTML=("PDC");  
+        }
+        else{
+          displayResult.innerHTML="neither PDC nor NID" 
+        }
+      }
+    </script>
+  </body>
+</html>

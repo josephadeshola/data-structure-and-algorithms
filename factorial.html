@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    (2)
+    <div id="disp"></div>
+
+    <script>
+        // (2)
+   for (factorial = 1; factorial <= 4; factorial++) {
+    var num = 1;
+    if (factorial == 0 || factorial == 1) {
+      disp.innerHTML +=(`<p>the factorial of ${factorial} is ${num}</p>`);
+    } else {
+      for (var i = factorial; i >= 1; i--) {
+        num = num * i;
+      }
+      disp.innerHTML +=(`<p>the factorial of ${factorial} is ${num}</p>`);
+    }
+  }
+    </script>
+</body>
+</html>
